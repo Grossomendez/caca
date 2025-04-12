@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reguetón</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 4rem;
+      animation: mover 3s ease-in-out infinite alternate;
+      color: #f39c12;
+      text-shadow: 2px 2px 10px #f39c12;
+    }
+
+    @keyframes mover {
+      0%   { transform: translateX(-40%); }
+      100% { transform: translateX(40%); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Reguetón</h1>
+</body>
+</html>
