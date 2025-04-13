@@ -3,33 +3,51 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reguetón</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.regueton.cl</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
       margin: 0;
-      height: 100vh;
+      padding: 0;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
       overflow: hidden;
     }
-
-    h1 {
+    #text {
       font-size: 4rem;
-      animation: mover 3s ease-in-out infinite alternate;
-      color: #f39c12;
-      text-shadow: 2px 2px 10px #f39c12;
+      font-weight: bold;
+      color: #333;
+      position: absolute;
+      animation: bounce 3s infinite ease-in-out;
+      white-space: nowrap;
     }
-
-    @keyframes mover {
-      0%   { transform: translateX(-40%); }
-      100% { transform: translateX(40%); }
+    #whatsapp {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/65/WhatsApp_Logo.png') no-repeat center center;
+      background-size: cover;
+      cursor: pointer;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-100px);
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Reguetón</h1>
+  <div id="text">www.regueton.cl</div>
+  <a href="https://wa.me/+56995616151" target="_blank">
+    <div id="whatsapp"></div>
+  </a>
 </body>
 </html>
